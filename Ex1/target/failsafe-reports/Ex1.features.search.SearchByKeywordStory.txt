@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: Ex1.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 39.011 s <<< FAILURE! - in Ex1.features.search.SearchByKeywordStory
+search_results_should_show_the_search_term_in_the_title(Ex1.features.search.SearchByKeywordStory)  Time elapsed: 37.002 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class io.appium.java_client.AppiumDriver
+	at Ex1.features.search.SearchByKeywordStory.annaCanBrowseTheWeb(SearchByKeywordStory.java:26)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: 
+Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TGIU5J9', ip: '192.168.105.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+    at getResponseForW3CError (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TGIU5J9', ip: '192.168.105.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteDriver). See below for more details.
+	at Ex1.features.search.SearchByKeywordStory.annaCanBrowseTheWeb(SearchByKeywordStory.java:26)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TGIU5J9', ip: '192.168.105.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+    at getResponseForW3CError (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TGIU5J9', ip: '192.168.105.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteDriver
+	at Ex1.features.search.SearchByKeywordStory.annaCanBrowseTheWeb(SearchByKeywordStory.java:26)
+Caused by: java.lang.reflect.InvocationTargetException
+	at Ex1.features.search.SearchByKeywordStory.annaCanBrowseTheWeb(SearchByKeywordStory.java:26)
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TGIU5J9', ip: '192.168.105.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'vn.tiki.app.tikiandroid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'vn.tiki.app.tikiandroid.ui.SplashActivity' or 'vn.tiki.app.tikiandroid.vn.tiki.app.tikiandroid.ui.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+    at getResponseForW3CError (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Admin\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at Ex1.features.search.SearchByKeywordStory.annaCanBrowseTheWeb(SearchByKeywordStory.java:26)
+

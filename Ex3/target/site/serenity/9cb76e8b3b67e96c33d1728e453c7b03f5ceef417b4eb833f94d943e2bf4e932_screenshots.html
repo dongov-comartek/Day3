@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity Screenplay and JUnit</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="c3866e11e81c1eaba1a207198919a21f47fb7ede4233c2f2f83df7841da6424f.html">Tiki Story</a></span>
+                > <span class="truncate-60"><a
+                    href="9cb76e8b3b67e96c33d1728e453c7b03f5ceef417b4eb833f94d943e2bf4e932.html">Scroll items after verify infor items </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-06-2020 11:50</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Tiki Story </span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Scroll items after verify infor items
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="794246e1e138853dce3e63dae739144cbb0e90c6beec4ec6def334ff36c966e7.png" title=" Anna items" width="1080"/>
+                <img src="b23b95876e501bf04ff585beffa30cedde6bef5a5cdb3502756e87c5e6f47f0b.png" title=" Anna clicks on danh muc button" width="1080"/>
+                <img src="152a83c82d3b5df4225b8d3252dfa76a24ad519300702aaad4c8b2529c902f6d.png" title=" Anna clicks on danh muc button (completed)" width="1080"/>
+                <img src="152a83c82d3b5df4225b8d3252dfa76a24ad519300702aaad4c8b2529c902f6d.png" title=" Anna swipe" width="1080"/>
+                <img src="b990455670d67ca9f08d75a0d892fde89d38ab73ec5369a89cad484e3e2609f0.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="b990455670d67ca9f08d75a0d892fde89d38ab73ec5369a89cad484e3e2609f0.png" title=" Anna swipe" width="1080"/>
+                <img src="e03e8470afca6e9cb3161bad0138a6d1c6636496c3b967034a99042147e8f3f6.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="e03e8470afca6e9cb3161bad0138a6d1c6636496c3b967034a99042147e8f3f6.png" title=" Anna clicks on International Goods button" width="1080"/>
+                <img src="eaa687172c998cde9e21dc6b207c91c3b2bb766cd975c428a41a90dea47bc6fb.png" title=" Anna clicks on International Goods button (completed)" width="1080"/>
+                <img src="eaa687172c998cde9e21dc6b207c91c3b2bb766cd975c428a41a90dea47bc6fb.png" title=" Anna swipe" width="1080"/>
+                <img src="762757da1de33d78cb1f199ff8e52e29ebe050a6f446f275f28a4e7aa4f390aa.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="762757da1de33d78cb1f199ff8e52e29ebe050a6f446f275f28a4e7aa4f390aa.png" title=" Anna swipe" width="1080"/>
+                <img src="20b15ab7c44bd58e6caec4f35cc26758aacd7862ea9e72135946becea1107629.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="20b15ab7c44bd58e6caec4f35cc26758aacd7862ea9e72135946becea1107629.png" title=" Anna swipe" width="1080"/>
+                <img src="901f562f2f1638b647c670087b8c12072b898f0e16fa342d02a8e0e218a1f9bb.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="901f562f2f1638b647c670087b8c12072b898f0e16fa342d02a8e0e218a1f9bb.png" title=" Anna swipe" width="1080"/>
+                <img src="f6ca26d516eb999969e0c16a32ff0535fb3692d515d84527c56916d3b8d247f4.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="f6ca26d516eb999969e0c16a32ff0535fb3692d515d84527c56916d3b8d247f4.png" title=" Anna clicks on laptop &amp; pc button" width="1080"/>
+                <img src="ea6386a95f462c0eff1eb086873a955adc8ad558fd66cef47ddc1647c24c0fa2.png" title=" Anna clicks on laptop &amp; pc button (completed)" width="1080"/>
+                <img src="ea6386a95f462c0eff1eb086873a955adc8ad558fd66cef47ddc1647c24c0fa2.png" title=" Anna swipe" width="1080"/>
+                <img src="6be515effbbd1bbebc6e2bfa9fd05587b419da444cefe92ae47482b6baf03ac7.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="6be515effbbd1bbebc6e2bfa9fd05587b419da444cefe92ae47482b6baf03ac7.png" title=" Anna open items" width="1080"/>
+                <img src="0888e1be41c210bea16dbe4c9d6b9a7df76b7beed3b15254af7abc8454f5ad70.png" title=" Anna clicks on [[io.appium.java_client.android.AndroidDriver, Capabilities: {app=E:\AutoTest\Appium\Day2\APK\Tiki.apk, appPackage=vn.tiki.app.tikiandroid, automationName=uiautomator2, databaseEnabled=false, desired={platformName=android, hub=http://localhost:4723/wd/hub, loggingPrefs={}, app=E:\AutoTest\Appium\Day2\APK\Tiki.apk, automationName=uiautomator2, deviceName=470876990104, newCommandTimeout=3000, platformVersion=7.0}, deviceApiLevel=24, deviceManufacturer=Xiaomi, deviceModel=Redmi Note 4, deviceName=470876990104, deviceScreenDensity=480, deviceScreenSize=1080x1920, deviceUDID=470876990104, hub=http://localhost:4723/wd/hub, javascriptEnabled=true, locationContextEnabled=false, loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@0, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3, platform=LINUX, platformName=Android, platformVersion=7.0, statBarHeight=72, takesScreenshot=true, viewportRect={left=0, top=72, width=1080, height=1848}, warnings={}, webStorageEnabled=false}] -&gt; id: vn.tiki.app.tikiandroid:id/vContainer]" width="1080"/>
+                <img src="0888e1be41c210bea16dbe4c9d6b9a7df76b7beed3b15254af7abc8454f5ad70.png" title=" Anna clicks on [[io.appium.java_client.android.AndroidDriver, Capabilities: {app=E:\AutoTest\Appium\Day2\APK\Tiki.apk, appPackage=vn.tiki.app.tikiandroid, automationName=uiautomator2, databaseEnabled=false, desired={platformName=android, hub=http://localhost:4723/wd/hub, loggingPrefs={}, app=E:\AutoTest\Appium\Day2\APK\Tiki.apk, automationName=uiautomator2, deviceName=470876990104, newCommandTimeout=3000, platformVersion=7.0}, deviceApiLevel=24, deviceManufacturer=Xiaomi, deviceModel=Redmi Note 4, deviceName=470876990104, deviceScreenDensity=480, deviceScreenSize=1080x1920, deviceUDID=470876990104, hub=http://localhost:4723/wd/hub, javascriptEnabled=true, locationContextEnabled=false, loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@0, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3, platform=LINUX, platformName=Android, platformVersion=7.0, statBarHeight=72, takesScreenshot=true, viewportRect={left=0, top=72, width=1080, height=1848}, warnings={}, webStorageEnabled=false}] -&gt; id: vn.tiki.app.tikiandroid:id/vContainer] (completed)" width="1080"/>
+                <img src="0888e1be41c210bea16dbe4c9d6b9a7df76b7beed3b15254af7abc8454f5ad70.png" title=" Anna open items (completed)" width="1080"/>
+                <img src="0888e1be41c210bea16dbe4c9d6b9a7df76b7beed3b15254af7abc8454f5ad70.png" title=" Anna swipe" width="1080"/>
+                <img src="ee519cb17cc2949df7154d71a8e9b0a8f677bad9c2f796e38a012ae5ac06ecdc.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="ee519cb17cc2949df7154d71a8e9b0a8f677bad9c2f796e38a012ae5ac06ecdc.png" title=" Anna swipe" width="1080"/>
+                <img src="3bc89cacc4af33eb54031713173ae870d15e411c3c456fd3e3e35bbd11e8938d.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="3bc89cacc4af33eb54031713173ae870d15e411c3c456fd3e3e35bbd11e8938d.png" title=" Anna swipe" width="1080"/>
+                <img src="dcfc9b3b684d9101478e88114cfb3be996de4b599fb672d583ea43a9c8ff299f.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="dcfc9b3b684d9101478e88114cfb3be996de4b599fb672d583ea43a9c8ff299f.png" title=" Anna swipe" width="1080"/>
+                <img src="d859e9f24569d6110813738c1d55eb6179ad3918e941db1f149dd92f27f0f1ba.png" title=" Anna swipe (completed)" width="1080"/>
+                <img src="d859e9f24569d6110813738c1d55eb6179ad3918e941db1f149dd92f27f0f1ba.png" title=" Anna items (completed)" width="1080"/>
+                <img src="8b2a9e16bb97db20e347c48c678d3d74b9717a57dd6e0b7fb76295ed8ef42e31.png" title=" Then category should be (true)" width="1080"/>
+                <img src="8b2a9e16bb97db20e347c48c678d3d74b9717a57dd6e0b7fb76295ed8ef42e31.png" title=" Then category should be (true) (completed)" width="1080"/>
+                <img src="a60e3268f0799b353a3857067d3f54cfc9d1c3a9a95dff11954dfd216f8b7e13.png" title=" Then provided should be (true)" width="1080"/>
+                <img src="c2f869ac78be9047c71b744c80873a51cfd2d1154c24f1386752129212e661f5.png" title=" Then sku should be (true)" width="1080"/>
+                <img src="9cda14336a1f2dd041e59cef6bcb56ddd2915c08d0e3f1386bba23b105356187.png" title=" Then trademark should be (true): <span class='success-color'>SUCCESS</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.81</span>
+</div>
+</body>
+</html>
