@@ -11,22 +11,19 @@ import java.util.List;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class CountItems implements Task {
-    public static int totalItems =0;
+    public static int totalItems = 0;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
-            List<WebElementFacade> lsitems = TikiScreen.LITS_ITEMS_FIELD.resolveAllFor(actor);
-        int totalItems1=lsitems.size();
-        for (int i = 0;i <24;i++){
+        while (TikiScreen.NORMAL_BOOK_FIELD.resolveFor(actor).isVisible() == false) {
             actor.attemptsTo(
                     Swipe.on(TikiScreen.BOOK_HOME_BUTTON).DownCenter()
             );
-
-            totalItems=totalItems1+ lsitems.size();
-
+            List<WebElementFacade> lsitems = TikiScreen.LITS_ITEMS_FIELD.resolveAllFor(actor);
+            totalItems = totalItems + lsitems.size()-2;
         }
     }
+
     public static CountItems check() {
         return instrumented(CountItems.class);
     }

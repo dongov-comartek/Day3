@@ -12,7 +12,7 @@ public class verifyItemsProducts implements Question<Integer> {
     @Override
     public Integer answeredBy(Actor actor) {
 
-        return OpenBookTiki.totalItems;
+        return CountItems.totalItems;
     }
 
 }

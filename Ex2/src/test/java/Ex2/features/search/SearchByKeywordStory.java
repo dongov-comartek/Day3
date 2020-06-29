@@ -1,10 +1,13 @@
 package Ex2.features.search;
 
 import Ex2.questions.TheResults;
+import Ex2.tasks.CountItems;
 import Ex2.tasks.OpenBookTiki;
+import Ex2.ui.TikiScreen;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.page.TheWebPage;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -33,13 +36,15 @@ public class SearchByKeywordStory {
     @Test
     public void search_results_should_show_the_search_term_in_the_title() {
         anna.attemptsTo(
-                OpenBookTiki.open()
+                Click.on(TikiScreen.MENU_BUTTON),
+                OpenBookTiki.open(),
+                Click.on(TikiScreen.BOOK_HOME_BUTTON),
+                Click.on(TikiScreen.VIEW_ALL_BUTTON),
+                Click.on(TikiScreen.VIEW_MORE_BUTTON),
+                CountItems.check()
         );
         anna.should(
-                seeThat(TheResults.verifyItems(),equalTo(6))
+                seeThat(TheResults.verifyItems(),equalTo(16))
         );
-
-
-
     }
 }

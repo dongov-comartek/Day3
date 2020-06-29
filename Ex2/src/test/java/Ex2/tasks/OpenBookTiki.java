@@ -16,27 +16,14 @@ import java.util.List;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class OpenBookTiki implements Task {
-    public static int totalItems = 0;
-
-
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-                Click.on(TikiScreen.MENU_BUTTON),
-                Swipe.on(TikiScreen.SCROLL_LEFT_BUTTON).DownLeft(),
-                Swipe.on(TikiScreen.SCROLL_LEFT_BUTTON).DownLeft(),
-                Swipe.on(TikiScreen.SCROLL_LEFT_BUTTON).DownLeft(),
-                Swipe.on(TikiScreen.SCROLL_LEFT_BUTTON).DownLeft(),
-                Click.on(TikiScreen.BOOK_HOME_BUTTON),
-                Swipe.on(TikiScreen.BOOK_HOME_BUTTON).DownCenter(),
-                Swipe.on(TikiScreen.BOOK_HOME_BUTTON).DownCenter(),
-                Click.on(TikiScreen.VIEW_ALL_BUTTON)
-        );
-        List<WebElementFacade> lsitems = TikiScreen.LITS_ITEMS_FIELD.resolveAllFor(actor);
-
-        totalItems = lsitems.size();
+        while (TikiScreen.BOOK_HOME_BUTTON.resolveFor(actor).isVisible()==false) {
+            actor.attemptsTo(
+                    Swipe.on(TikiScreen.SCROLL_LEFT_BUTTON).DownLeft()
+            );
+        }
     }
-
     public static OpenBookTiki open() {
         return instrumented(OpenBookTiki.class);
     }

@@ -17,7 +17,7 @@ public class TikiScreen {
     public static Target LITERATURE_FIELD = Target.the("Literature field")
             .located(By.xpath("//*[@text='Sách văn học']"));
     public static Target NORMAL_BOOK_FIELD = Target.the("Normal Books field")
-            .located(By.xpath("//*[@text='Sách Thường Thức - Gia Đình']"));
+            .located(By.xpath("//*[@text='Cookbooks, Food & Wine']"));
     public static Target LITS_ITEMS_FIELD = Target.the("list items field")
             .located(By.id("vn.tiki.app.tikiandroid:id/tvName"));
 
